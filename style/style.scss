@@ -1,0 +1,15 @@
+@import "reset.scss";
+
+.users {
+  &__name {
+    display: inline;
+  }
+
+  &__age {
+    display: inline;
+  }
+
+  &__role {
+    display: inline;
+  }
+}
