@@ -1,15 +1,116 @@
 @import "reset.scss";
 
+.wrapper {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+//--------------------------- HEADER--------------------------------//
+.header {
+  background-color: #75ffc2;
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.addUser__button {
+  font-size: 50px;
+  background-color: #008400;
+  border: 0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #332eff;
+    cursor: pointer;
+  }
+}
+
+//--------------------------- MAIN--------------------------------//
+
+.main {
+  background-color: #cfd4ff;
+  color: #3B444F;
+  padding-top: 30px;
+
+  &__wrapper {
+    min-height: calc(100vh - 252px);
+  }
+}
+
 .users {
-  &__name {
-    display: inline;
+  text-align: center;
+
+  &__cell {
+    border: 1px solid black;
   }
 
-  &__age {
-    display: inline;
+  &__tableNames {
+    background-color: #3B444F;
+    color: white;
+  }
+}
+
+.addUser {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.view {
+  display: none;
+  font-size: 16px;
+  min-width: 1220px;
+  margin: 0 auto;
+
+  &__cell {
+    padding: 10px;
   }
 
-  &__role {
-    display: inline;
+  &__additional {
+    text-align: justify;
   }
+}
+
+.editBox {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: darkgrey;
+  padding: 15px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//--------------------------- FOOTER--------------------------------//
+
+.footer {
+  background-color: #75ffc2;
+
+  &__wrapper {
+    padding: 40px;
+  }
+}
+
+td {
+  padding: 15px 40px;
 }
