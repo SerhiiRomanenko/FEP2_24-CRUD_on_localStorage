@@ -376,34 +376,46 @@ $addSubmit.addEventListener("click", function (event) {
 
   if (!validateName($name.value.trim())) {
     $name.style.border = "2px solid red";
+    $name.parentNode.querySelector(".err__name").style.display = "block";
   } else {
     $name.style.border = "1px solid black";
+    $name.parentNode.querySelector(".err__name").style.display = "none";
   }
   if (!validateName($surname.value.trim())) {
     $surname.style.border = "2px solid red";
+    $surname.parentNode.querySelector(".err__surname").style.display = "block";
   } else {
     $surname.style.border = "1px solid black";
+    $surname.parentNode.querySelector(".err__surname").style.display = "none";
   }
   if (!validateRole($roleSelect)) {
     $roleSelect.style.border = "2px solid red";
+    $roleSelect.parentNode.querySelector(".err__role").style.display = "block";
   } else {
     $roleSelect.style.border = "1px solid black";
+    $roleSelect.parentNode.querySelector(".err__role").style.display = "none";
   }
   if (!validateEmail($email.value.trim())) {
     $email.style.border = "2px solid red";
+    $email.parentNode.querySelector(".err__email").style.display = "block";
   } else {
     $email.style.border = "1px solid black";
+    $email.parentNode.querySelector(".err__email").style.display = "none";
   }
   if (!validatePhone($phone.value.trim())) {
     $phone.style.border = "2px solid red";
+    $phone.parentNode.querySelector(".err__phone").style.display = "block";
   } else {
     $phone.style.border = "1px solid black";
+    $phone.parentNode.querySelector(".err__phone").style.display = "none";
   }
 
   if ($about.value.trim().length <= 10) {
     $about.style.border = "2px solid red";
+    $about.parentNode.querySelector(".err__about").style.display = "block";
   } else {
     $about.style.border = "1px solid black";
+    $about.parentNode.querySelector(".err__about").style.display = "none";
   }
 
   let addingUser = {

@@ -20,22 +20,28 @@
             <form class="addUser__form">
                 <label for="addUser-name">Введіть ім'я: </label>
                 <input id="addUser-name" class="addUser__name" type="text" name="name" placeholder="Введіть ім'я">
+                <small class="err__name" style="display: none; color: red">Не правильно введено ім'я</small>
                 <label for="addUser-surname">Введіть прізвище: </label>
                 <input id="addUser-surname" class="addUser__surname" type="text" name="surname"
                        placeholder="Введіть прізвище">
+                <small class="err__surname" style="display: none; color: red">Не правильно введено прізвище</small>
                 <label for="role-select">Введіть роль</label>
                 <select class="addUser__role" name="role" id="role-select" required>
                     <option value="">--будь-ласка, виберіть роль--</option>
                     <option value="admin">admin</option>
                     <option value="user">user</option>
                 </select>
+                <small class="err__role" style="display: none; color: red">Не вибрали роль</small>
                 <label for="phone">Введіть Ваш номер: </label>
                 <input class="addUser__phone" type="tel" id="phone" name="phone" placeholder="Ваш номер">
+                <small class="err__phone" style="display: none; color: red">Не правильно введено телефон</small>
                 <label for="addUser-email">Введіть Ваш e-mail: </label>
                 <input id="addUser-email" class="addUser__email" type="email" name="email" placeholder="Ваш e-mail">
+                <small class="err__email" style="display: none; color: red">Не правильно введено e-mail</small>
                 <label for="addUser-about">Введіть інформацію про користувача: </label>
                 <textarea id="addUser-about" class="addUser__about" name="about"
                           placeholder="Інформація про користувача"></textarea>
+                <small class="err__about" style="display: none; color: red">Не введено доп. даних</small>
                 <button class="addUser__submit" type="submit">Додати</button>
             </form>
         </div>
